@@ -12,7 +12,7 @@ db_get honey/name
 name="$RET"
 echo "Your full name is: $name"
 
-db_get honey/like_debian
+db_get honey/like_linux
 great="$RET"
 echo "so your answer was, $great"
 db_stop
