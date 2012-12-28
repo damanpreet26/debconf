@@ -8,17 +8,17 @@ Type: string
 Description: What is ur full name?
  Need you to enter in your full name.
 
-Template: honey/like_debian
+Template: honey/like_linux
 Type: boolean
-Description: Do you like Debian?
+Description: Do you like Linux ?
  We'd like to know if you like the Linux system.
 
-Template: honey/why_debian_is_great
+Template: honey/why_linux_is_great
 Type: note
 Description: Then why are you using it ?
  Poor fellow, Linux is great.
 
-Template: honey/debian_is_great
+Template: honey/linux_is_great
 Type: note
 Description: yes my dear friend linux is great.
  Linux is great and awesome..:D
