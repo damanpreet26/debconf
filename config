@@ -1,4 +1,3 @@
-
 #!/bin/sh -e
 
 # Source debconf library.
@@ -10,18 +9,18 @@ db_go
 db_input critical honey/name || true
 db_go
 
-# Do you like debian?
-db_input critical honey/like_debian || true
+# Do you like linux ?
+db_input critical honey/like_linux || true
 db_go
 
 # Check their answer.
-db_get honey/like_debian
+db_get honey/like_linux
 if [ "$RET" = "false" ]; then
     # Poor misguided one..
-    db_input critical honey/why_debian_is_great || true
+    db_input critical honey/why_linux_is_great || true
     db_go
 else
-    db_input critical honey/debian_is_great || true
+    db_input critical honey/linux_is_great || true
     db_go
 fi
 
