@@ -1,0 +1,24 @@
+Template: honey/username
+Type: string
+Description: Username:
+ Enter in your user_name
+
+Template: honey/name
+Type: string
+Description: What is ur full name?
+ Need you to enter in your full name.
+
+Template: honey/like_debian
+Type: boolean
+Description: Do you like Debian?
+ We'd like to know if you like the Linux system.
+
+Template: honey/why_debian_is_great
+Type: note
+Description: Then why are you using it ?
+ Poor fellow, Linux is great.
+
+Template: honey/debian_is_great
+Type: note
+Description: yes my dear friend linux is great.
+ Linux is great and awesome..:D

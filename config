@@ -1,0 +1,29 @@
+
+#!/bin/sh -e
+
+# Source debconf library.
+. /usr/share/debconf/confmodule
+
+db_input critical honey/username || true
+db_go
+
+db_input critical honey/name || true
+db_go
+
+# Do you like debian?
+db_input critical honey/like_debian || true
+db_go
+
+# Check their answer.
+db_get honey/like_debian
+if [ "$RET" = "false" ]; then
+    # Poor misguided one..
+    db_input critical honey/why_debian_is_great || true
+    db_go
+else
+    db_input critical honey/debian_is_great || true
+    db_go
+fi
+
+
+
